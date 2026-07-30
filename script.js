@@ -15,6 +15,7 @@ nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () =>
 
 document.querySelectorAll('.tabs [role="tab"]').forEach((button) => {
   button.addEventListener('click', () => {
+    const tabList = button.closest('.tabs');
     document.querySelectorAll('.tabs [role="tab"]').forEach((tab) => {
       tab.classList.remove('active');
       tab.setAttribute('aria-selected', 'false');
@@ -22,6 +23,7 @@ document.querySelectorAll('.tabs [role="tab"]').forEach((button) => {
     document.querySelectorAll('.service-card').forEach((panel) => panel.classList.add('hidden'));
     button.classList.add('active');
     button.setAttribute('aria-selected', 'true');
+    tabList.classList.toggle('is-beesmart', button.dataset.tab === 'beesmart');
     document.getElementById(button.dataset.tab).classList.remove('hidden');
   });
 });
