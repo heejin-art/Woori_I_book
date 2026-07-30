@@ -67,9 +67,22 @@ if (spotlightVideo && videoToggle) {
 }
 
 const floatingTop = document.querySelector('.floating-top');
+const floatingBar = document.querySelector('.floating-bar');
+const heroSection = document.querySelector('.hero');
 
 if (floatingTop) {
   floatingTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+}
+
+if (floatingBar && heroSection) {
+  const updateFloatingBar = () => {
+    const heroBottom = heroSection.getBoundingClientRect().bottom;
+    floatingBar.classList.toggle('is-visible', heroBottom <= window.innerHeight * 0.2);
+  };
+
+  window.addEventListener('scroll', updateFloatingBar, { passive: true });
+  window.addEventListener('resize', updateFloatingBar);
+  updateFloatingBar();
 }
