@@ -27,3 +27,17 @@ document.querySelectorAll('.tabs [role="tab"]').forEach((button) => {
     document.getElementById(button.dataset.tab).classList.remove('hidden');
   });
 });
+
+document.querySelectorAll('.gallery-row').forEach((row) => {
+  const set = document.createElement('div');
+  set.className = 'gallery-set';
+
+  while (row.firstChild) {
+    set.appendChild(row.firstChild);
+  }
+
+  const duplicate = set.cloneNode(true);
+  duplicate.setAttribute('aria-hidden', 'true');
+  duplicate.querySelectorAll('img').forEach((image) => image.setAttribute('alt', ''));
+  row.append(set, duplicate);
+});
