@@ -65,3 +65,11 @@ if (spotlightVideo && videoToggle) {
   spotlightVideo.addEventListener('pause', syncVideoButton);
   syncVideoButton();
 }
+
+const floatingTop = document.querySelector('.floating-top');
+
+if (floatingTop) {
+  floatingTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
