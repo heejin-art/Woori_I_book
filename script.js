@@ -41,3 +41,27 @@ document.querySelectorAll('.gallery-row').forEach((row) => {
   duplicate.querySelectorAll('img').forEach((image) => image.setAttribute('alt', ''));
   row.append(set, duplicate);
 });
+
+const spotlightVideo = document.querySelector('.screen video');
+const videoToggle = document.querySelector('.video-toggle');
+
+if (spotlightVideo && videoToggle) {
+  const syncVideoButton = () => {
+    const isPlaying = !spotlightVideo.paused;
+    videoToggle.classList.toggle('is-playing', isPlaying);
+    videoToggle.setAttribute('aria-label', isPlaying ? '영상 일시정지' : '영상 재생');
+    videoToggle.setAttribute('aria-pressed', String(!isPlaying));
+  };
+
+  videoToggle.addEventListener('click', () => {
+    if (spotlightVideo.paused) {
+      spotlightVideo.play();
+    } else {
+      spotlightVideo.pause();
+    }
+  });
+
+  spotlightVideo.addEventListener('play', syncVideoButton);
+  spotlightVideo.addEventListener('pause', syncVideoButton);
+  syncVideoButton();
+}
