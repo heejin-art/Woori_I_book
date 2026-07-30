@@ -1,5 +1,5 @@
-const menuButton = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.desktop-nav');
+const menuButton = document.querySelector('.menu');
+const nav = document.querySelector('.nav-inner > nav');
 
 menuButton.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');

@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="우리AI북 - AI와 함께 읽고, 생각하고, 창작하는 배움">
   <title>우리AI북 | 상상이 현실이 되는 배움</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,78 +11,84 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="nav-wrap">
-      <a class="logo" href="#top" aria-label="우리AI북 홈"><span class="logo-mark">▯</span><span>WooriAIBook</span></a>
-      <nav class="desktop-nav" aria-label="주요 메뉴">
-        <a href="#philosophy">회사소개</a><a href="#services">서비스</a><a href="#gallery">홍보센터</a><a href="#careers">우리아이북 인사말</a>
+  <header>
+    <div class="nav-inner">
+      <a class="brand" href="#top"><img src="assets/logo.png" alt=""><strong>WooriAIBook</strong></a>
+      <nav aria-label="주요 메뉴">
+        <a href="#company">회사소개</a><a href="#services">서비스</a><a href="#gallery">홍보센터</a><a href="#greeting">우리아이북 인사말</a>
       </nav>
-      <div class="nav-actions"><a class="contact" href="mailto:hello@wooriaibook.com">Contact</a><button class="lang" type="button">◉ KR⌄</button></div>
-      <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+      <div class="nav-tools"><a class="contact" href="mailto:info@wooriaibook.com">Contact</a><button><img src="assets/language icon.png" alt=""> KR⌄</button></div>
+      <button class="menu" aria-label="메뉴 열기" aria-expanded="false">☰</button>
     </div>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow">AI EDUCATION COMPANY</p>
-          <h1>우리 아이의 상상,<br>세상에 펼쳐지다</h1>
-          <p class="lead">AI는 배우는 방식을 바꿉니다.<br>우리아이북은 읽고, 생각하고, 창작하는<br>새로운 배움의 경험을 만듭니다.</p>
-          <div class="hero-buttons"><a class="btn primary" href="#services">서비스 보기 <span>›</span></a><a class="btn secondary" href="#philosophy">회사 소개보기 <span>›</span></a></div>
-        </div>
-        <div class="media-slot hero-media" data-slot="assets/hero-main.webp" role="img" aria-label="태블릿으로 AI 학습을 체험하는 아이 이미지">
-          <div class="slot-art"><span>✦</span><b>HERO IMAGE</b><small>assets/hero-main.webp<br>권장 4:3 · 투명 배경 PNG/WebP</small></div>
-        </div>
+      <img class="hero-bg" src="assets/hero.png" alt="">
+      <div class="hero-content">
+        <p class="kicker">AI EDUCATION COMPANY</p>
+        <h1>우리 아이의 상상,<br>세상에 펼쳐지다</h1>
+        <p class="hero-desc">AI는 배우는 방식을 바꿉니다.<br>우리아이북은 읽고, 생각하고, 창작하는<br>새로운 배움의 경험을 만듭니다.</p>
+        <div class="hero-actions"><a class="yellow-btn" href="#services">서비스 보기 <b>›</b></a><a class="white-btn" href="#company">회사 소개보기 <b>›</b></a></div>
       </div>
     </section>
 
-    <section class="philosophy section" id="philosophy">
-      <div class="section-heading"><p class="eyebrow">OUR PHILOSOPHY</p><h2>AI와 함께 읽고, 생각하고, 창작하는 배움</h2></div>
-      <div class="value-grid">
-        <article><div class="media-slot oval" data-slot="assets/philosophy-story.webp"><span>01</span><small>philosophy-story.webp</small></div><h3>읽는 즐거움</h3><p>AI STORY</p></article>
-        <article><div class="media-slot oval" data-slot="assets/philosophy-thinking.webp"><span>02</span><small>philosophy-thinking.webp</small></div><h3>생각하는 힘</h3><p>AI THINKING</p></article>
-        <article><div class="media-slot oval" data-slot="assets/philosophy-creation.webp"><span>03</span><small>philosophy-creation.webp</small></div><h3>창작하는 경험</h3><p>AI CREATION</p></article>
+    <section class="philosophy" id="company">
+      <div class="heading"><p>OUR PHILOSOPHY</p><h2>AI와 함께 읽고, 생각하고, 창작하는 배움</h2></div>
+      <div class="philosophy-grid">
+        <article><div class="oval"><img src="assets/section_1_읽는즐거움.png" alt="책 읽는 즐거움을 느끼는 아이"><img class="deco book" src="assets/section_1_책.png" alt=""></div><h3>읽는 즐거움</h3><span>AI STORY</span></article>
+        <article><div class="oval"><img src="assets/section_1_생각하는힘.png" alt="생각하는 힘을 키우는 아이"><img class="deco bee" src="assets/section_1_벌.png" alt=""></div><h3>생각하는 힘</h3><span>AI THINKING</span></article>
+        <article><div class="oval"><img src="assets/section_1_창작하는힘.png" alt="창작하는 경험을 하는 아이"><img class="deco bulb" src="assets/section_1_전구.png" alt=""></div><h3>창작하는 경험</h3><span>AI CREATION</span></article>
       </div>
     </section>
 
-    <section class="services section" id="services">
-      <div class="section-heading"><p class="eyebrow">OUR SERVICES</p><h2>우리 아이북이 제공하는 서비스</h2></div>
-      <div class="tabs" role="tablist"><button class="tab active" data-tab="ownabee">OwnaBee</button><button class="tab" data-tab="beesmart">Bee Smart</button></div>
+    <section class="services" id="services">
+      <div class="heading"><p>OUR SERVICES</p><h2>우리 아이북이 제공하는 서비스</h2></div>
+      <div class="tabs"><button class="active" data-tab="ownabee">OwnaBee</button><button data-tab="beesmart">Bee Smart</button></div>
       <div class="service-card" id="ownabee">
-        <div class="media-slot device" data-slot="assets/service-ownabee.webp"><b>SERVICE<br>PRODUCT IMAGE</b><small>service-ownabee.webp · 4:3</small></div>
-        <div class="service-copy"><p class="age">◎ 6-12세 추천!</p><h3>AI 영어동화 창작 독서 플랫폼</h3><p>Ownabee(오너비)는 영어를 배우는 것을 넘어,<br>아이의 상상력과 표현력이 함께 자라는<br>AI 영어 독서 경험을 제공합니다.</p><a href="#">✦ 서비스 둘러보기 ›</a>
-          <div class="feature-list"><div><i>▣</i><span>다양한 영어동화<br>라이브러리</span></div><div><i>◉</i><span>AI 음성으로<br>듣는 오디오북</span></div><div><i>★</i><span>AI와 함께 만드는<br>나만의 동화</span></div><div><i>✿</i><span>창작 작품 보관<br>및 공유</span></div></div>
+        <div class="product"><img src="assets/section_2_ownabee.png" alt="Ownabee AI 영어동화 플랫폼"></div>
+        <div class="service-text">
+          <p class="age"><img src="assets/section_2_ownabee_아이얼굴아이콘.png" alt=""> 6-12세 추천!</p>
+          <h3>AI 영어동화 창작 독서 플랫폼</h3>
+          <p class="summary">Ownabee(오너비)는 영어를 배우는 것을 넘어,<br>아이의 상상력과 표현력이 함께 자라는<br>AI 영어 독서 경험을 제공합니다.</p>
+          <a class="more" href="#"><img src="assets/section_2_ownabee_빛나는효과.png" alt=""> 서비스 둘러보기 ›</a>
+          <div class="features">
+            <div><img src="assets/section_2_ownabee_icon1.png" alt=""><span>다양한 영어동화<br>라이브러리</span></div>
+            <div><img src="assets/section_2_ownabee_icon2.png" alt=""><span>AI 음성으로<br>듣는 오디오북</span></div>
+            <div><img src="assets/section_2_ownabee_icon3.png" alt=""><span>AI와 함께 만드는<br>나만의 동화</span></div>
+            <div><img src="assets/section_2_ownabee_icon4.png" alt=""><span>창작 작품 보관<br>및 공유</span></div>
+          </div>
         </div>
       </div>
-      <div class="service-card hidden" id="beesmart">
-        <div class="media-slot device" data-slot="assets/service-beesmart.webp"><b>BEE SMART<br>PRODUCT IMAGE</b><small>service-beesmart.webp · 4:3</small></div>
-        <div class="service-copy"><p class="age">◎ 창의력 교육 추천!</p><h3>생각을 키우는 AI 학습 서비스</h3><p>아이의 호기심을 질문으로 연결하고,<br>스스로 생각하고 표현하는 힘을 키우는<br>새로운 AI 학습 경험입니다.</p></div>
+      <div class="service-card beesmart-card hidden" id="beesmart"><div><h3>Bee Smart</h3><p>새로운 서비스 콘텐츠가 준비 중입니다.</p></div></div>
+    </section>
+
+    <section class="spotlight">
+      <div class="heading"><p>IN THE SPOTLIGHT</p><h2>미디어가 주목한 <span>우리아이북<img src="assets/section_3_우리아이북밑줄.png" alt=""></span></h2></div>
+      <div class="tablet-wrap">
+        <img class="tv" src="assets/section_3_tv화제_완성본.png" alt="TV 화제">
+        <div class="screen"><span>미디어 화면 이미지 또는 영상을<br>이 영역에 넣어주세요</span></div>
+        <img class="tablet" src="assets/section_3_아이패드목업.png" alt="아이패드 목업">
       </div>
+      <div class="spot-note"><img src="assets/section_3_꾸밈요소3.png" alt=""><b>★</b><span>방송을 통해 소개된 우리아이북의 AI 교육 이야기, 지금 바로 만나보세요.</span><b>★</b><img src="assets/section_3_꾸밈요소4.png" alt=""></div>
     </section>
 
-    <section class="spotlight section">
-      <div class="section-heading"><p class="eyebrow">IN THE SPOTLIGHT</p><h2>미디어가 주목한 우리아이북</h2></div>
-      <div class="media-frame"><span class="tv-badge">TV<br><b>화제</b></span><div class="media-slot video" data-slot="assets/media-spotlight.webp"><b>MEDIA SCREENSHOT / VIDEO</b><small>media-spotlight.webp 또는 iframe으로 교체</small></div></div>
-      <p class="spotlight-note">✦　 방송을 통해 소개된 우리아이북의 AI 교육 이야기, 지금 바로 만나보세요.　✦</p>
-    </section>
-
-    <section class="gallery section" id="gallery">
-      <div class="section-heading"><p class="eyebrow">GALLERY</p><h2>아이들의 상상력이 현실이 되는 시간</h2></div>
-      <div class="gallery-track" aria-label="작품 갤러리">
+    <section class="gallery" id="gallery">
+      <div class="heading"><p>GALLERY</p><h2>아이들의 상상력이 현실이 되는 시간</h2></div>
+      <div class="gallery-scroll">
         <div class="gallery-grid">
-          <div class="art-slot c1">01<small>gallery-01.webp</small></div><div class="art-slot c2">02<small>gallery-02.webp</small></div><div class="art-slot c3">03<small>gallery-03.webp</small></div><div class="art-slot c4">04<small>gallery-04.webp</small></div><div class="art-slot c5">05<small>gallery-05.webp</small></div><div class="art-slot c6">06<small>gallery-06.webp</small></div><div class="art-slot c7">07<small>gallery-07.webp</small></div><div class="art-slot c8">08<small>gallery-08.webp</small></div>
-          <div class="art-slot c8">09<small>gallery-09.webp</small></div><div class="art-slot c7">10<small>gallery-10.webp</small></div><div class="art-slot c6">11<small>gallery-11.webp</small></div><div class="art-slot c5">12<small>gallery-12.webp</small></div><div class="art-slot c4">13<small>gallery-13.webp</small></div><div class="art-slot c3">14<small>gallery-14.webp</small></div><div class="art-slot c2">15<small>gallery-15.webp</small></div><div class="art-slot c1">16<small>gallery-16.webp</small></div>
+          <img src="assets/section_4_창작동화1.png" alt="창작동화 작품"><img src="assets/section_4_창작동화2.png" alt="창작동화 작품"><img src="assets/section_4_창작동화3.png" alt="창작동화 작품"><img src="assets/section_4_창작동화4.png" alt="창작동화 작품"><img src="assets/section_4_창작동화5.png" alt="창작동화 작품"><img src="assets/section_4_창작동화6.png" alt="창작동화 작품"><img src="assets/section_4_캐릭터꾸미기1.png" alt="캐릭터 꾸미기 작품"><img src="assets/section_4_캐릭터꾸미기2.png" alt="캐릭터 꾸미기 작품"><img src="assets/section_4_캐릭터꾸미기3.png" alt="캐릭터 꾸미기 작품">
+          <img src="assets/section_4_캐릭터꾸미기4.png" alt="캐릭터 꾸미기 작품"><img src="assets/section_4_포폴1.png" alt="포트폴리오 작품"><img src="assets/section_4_포폴2.png" alt="포트폴리오 작품"><img src="assets/section_4_포폴3.png" alt="포트폴리오 작품"><img src="assets/section_4_포폴4.png" alt="포트폴리오 작품"><img src="assets/section_4_포폴5.png" alt="포트폴리오 작품"><img src="assets/section_4_포폴6.png" alt="포트폴리오 작품"><img src="assets/section_4_포폴7.png" alt="포트폴리오 작품">
         </div>
       </div>
     </section>
   </main>
 
-  <footer id="careers">
+  <footer id="greeting">
     <div class="footer-inner">
-      <div><a class="logo" href="#top"><span class="logo-mark">▯</span><span>WooriAIBook</span></a><p class="copyright">Copyright © 우리아이북. All rights reserved.</p></div>
-      <p class="company">상호명 : (주)우리아이북　| 대표 : 김희진　| 주소 : 서울특별시<br>사업자등록번호 : 623-87-03631　| 이메일 : info@wooriaibook.com</p>
-      <div class="footer-right"><div class="social"><a href="#">▶</a><a href="#">◎</a><a href="#">blog</a><a href="mailto:info@wooriaibook.com">✉</a></div><div class="policies"><a href="#">개인정보처리방침</a><a href="#">이용약관</a><a href="#">고객지원</a></div></div>
+      <div class="footer-brand"><div><img src="assets/footer_logo.png" alt=""><strong>WooriAIBook</strong></div><small>Copyright © 우리아이북. All rights reserved.</small></div>
+      <p>상호명 : (주)우리아이북　| 대표 : 김희진　| 주소 : 서울특별시 중구 장충단로 188, 302호 (장충동1가, 분도빌딩)<br>사업자등록번호 : 623-87-03631　| 이메일 : info@wooriaibook.com<br>통신판매업 신고번호 : 제2025-서울중구-1016호</p>
+      <div class="footer-links"><div class="social"><a href="#"><img src="assets/footer_icon1.png" alt="유튜브"></a><a href="#"><img src="assets/footer_icon2.png" alt="인스타그램"></a><a href="#"><img src="assets/footer_icon3.png" alt="블로그"></a><a href="mailto:info@wooriaibook.com"><img src="assets/footer_icon4.png" alt="이메일"></a></div><nav><a href="#">개인정보처리방침</a><a href="#">이용약관</a><a href="#">고객지원</a></nav></div>
     </div>
   </footer>
   <script src="script.js"></script>
