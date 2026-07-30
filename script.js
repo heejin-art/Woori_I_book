@@ -86,3 +86,44 @@ if (floatingBar && heroSection) {
   window.addEventListener('resize', updateFloatingBar);
   updateFloatingBar();
 }
+
+const ownabeeQuick = document.querySelector('.ownabee-quick');
+const storeModal = document.querySelector('.store-modal');
+
+if (ownabeeQuick && storeModal) {
+  const closeStoreModal = () => {
+    storeModal.hidden = true;
+    document.body.style.overflow = '';
+    ownabeeQuick.focus();
+  };
+
+  ownabeeQuick.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const userAgent = navigator.userAgent || '';
+    const isAndroid = /Android/i.test(userAgent);
+    const isIOS = /iPhone|iPad|iPod/i.test(userAgent)
+      || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+    if (isAndroid) {
+      window.location.href = ownabeeQuick.dataset.androidUrl;
+      return;
+    }
+
+    if (isIOS) {
+      window.location.href = ownabeeQuick.dataset.iosUrl;
+      return;
+    }
+
+    storeModal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    storeModal.querySelector('.store-modal-close').focus();
+  });
+
+  storeModal.querySelector('.store-modal-close').addEventListener('click', closeStoreModal);
+  storeModal.querySelector('.store-modal-backdrop').addEventListener('click', closeStoreModal);
+  storeModal.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeStoreModal));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !storeModal.hidden) closeStoreModal();
+  });
+}

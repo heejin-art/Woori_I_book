@@ -123,7 +123,7 @@
   </main>
 
   <aside class="floating-bar" aria-label="빠른 메뉴">
-    <a class="floating-item ownabee-quick" href="https://www.ownabee.com/ko" target="_blank" rel="noopener noreferrer">
+    <a class="floating-item ownabee-quick" href="#" data-android-url="https://play.google.com/store/search?q=ownabee&amp;c=apps&amp;hl=ko" data-ios-url="https://apps.apple.com/kr/app/ownabee/id6754865508">
       <span class="floating-icon"><img src="assets/플로팅바_오너비앱시작하기.png" alt=""></span>
       <strong>Ownabee<br>앱 시작하기</strong>
     </a>
@@ -136,6 +136,19 @@
       <strong>TOP</strong>
     </button>
   </aside>
+
+  <div class="store-modal" role="dialog" aria-modal="true" aria-labelledby="store-modal-title" hidden>
+    <button class="store-modal-backdrop" type="button" aria-label="앱 스토어 선택창 닫기"></button>
+    <div class="store-modal-panel">
+      <button class="store-modal-close" type="button" aria-label="닫기">×</button>
+      <p>OWNABEE APP</p>
+      <h2 id="store-modal-title">사용할 스토어를 선택해 주세요</h2>
+      <div>
+        <a class="store-android" href="https://play.google.com/store/search?q=ownabee&amp;c=apps&amp;hl=ko" target="_blank" rel="noopener noreferrer">Google Play</a>
+        <a class="store-ios" href="https://apps.apple.com/kr/app/ownabee/id6754865508" target="_blank" rel="noopener noreferrer">App Store</a>
+      </div>
+    </div>
+  </div>
 
   <footer id="greeting">
     <div class="footer-inner">
