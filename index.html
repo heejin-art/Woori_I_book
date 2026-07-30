@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="우리AI북 - AI와 함께 읽고, 생각하고, 창작하는 배움">
-  <title>우리AI북 | 상상이 현실이 되는 배움</title>
+  <meta name="description" content="우리아이북 - AI와 함께 읽고, 생각하고, 창작하는 배움">
+  <title>우리아이북 | 상상이 현실이 되는 배움</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -51,8 +51,8 @@
 
     <section class="services" id="services">
       <div class="heading"><p>OUR SERVICES</p><h2>우리 아이북이 제공하는 서비스</h2></div>
-      <div class="tabs"><button class="active" data-tab="ownabee">OwnaBee</button><button data-tab="beesmart">Bee Smart</button></div>
-      <div class="service-card" id="ownabee">
+      <div class="tabs" role="tablist" aria-label="서비스 선택"><button class="active" type="button" role="tab" aria-selected="true" aria-controls="ownabee" data-tab="ownabee">OwnaBee</button><button type="button" role="tab" aria-selected="false" aria-controls="beesmart" data-tab="beesmart">Bee Smart</button></div>
+      <div class="service-card" id="ownabee" role="tabpanel">
         <div class="product"><img src="assets/section_2_ownabee.png" alt="Ownabee AI 영어동화 플랫폼"></div>
         <div class="service-text">
           <p class="age"><img src="assets/section_2_ownabee_아이얼굴아이콘.png" alt=""> 6-12세 추천!</p>
@@ -67,7 +67,7 @@
           </div>
         </div>
       </div>
-      <div class="service-card beesmart-card hidden" id="beesmart"><div><h3>Bee Smart</h3><p>새로운 서비스 콘텐츠가 준비 중입니다.</p></div></div>
+      <div class="service-card beesmart-card hidden" id="beesmart" role="tabpanel"><div><h3>Bee Smart</h3><p>새로운 서비스 콘텐츠가 준비 중입니다.</p></div></div>
     </section>
 
     <section class="spotlight">

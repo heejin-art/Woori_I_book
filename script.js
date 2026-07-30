@@ -13,11 +13,15 @@ nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () =>
   menuButton.textContent = '☰';
 }));
 
-document.querySelectorAll('.tab').forEach((button) => {
+document.querySelectorAll('.tabs [role="tab"]').forEach((button) => {
   button.addEventListener('click', () => {
-    document.querySelectorAll('.tab').forEach((tab) => tab.classList.remove('active'));
+    document.querySelectorAll('.tabs [role="tab"]').forEach((tab) => {
+      tab.classList.remove('active');
+      tab.setAttribute('aria-selected', 'false');
+    });
     document.querySelectorAll('.service-card').forEach((panel) => panel.classList.add('hidden'));
     button.classList.add('active');
+    button.setAttribute('aria-selected', 'true');
     document.getElementById(button.dataset.tab).classList.remove('hidden');
   });
 });
